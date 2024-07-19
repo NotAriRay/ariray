@@ -44,7 +44,7 @@ body {
 
 .border-container {
   position: relative;
-  padding: 15px;
+  padding: 20px;
   border: 2px solid #414868; /* Purple border color */
   margin: 20px;
   width: 300px; /* Adjust width as needed */
@@ -77,6 +77,49 @@ body {
   color: #f7768e;
 }
 
+.skill-bar {
+  margin: 10px 0;
+}
+
+.skill-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.bar {
+  width: 100%;
+  background-color: #414868;
+  border-radius: 0px;
+}
+
+.progress {
+  height: 10px;
+  background-color: #f7768e;
+  border-radius: 0px;
+  width: 0%; /* Initial width set to 0 */
+  transition: width 1s ease; /* Transition effect for the width */
+}
+
+.languages:hover .skill-bar:nth-child(1) .progress {
+  width: 90%;
+}
+
+.languages:hover .skill-bar:nth-child(2) .progress {
+  width: 85%;
+}
+
+.languages:hover .skill-bar:nth-child(3) .progress {
+  width: 69%;
+}
+
+.languages:hover .skill-bar:nth-child(4) .progress {
+  width: 54%;
+}
+
+.progress:hover {
+  background-color: #f7768e;
+}
+
 .image-container {
   position: relative;
   overflow: hidden;
@@ -94,7 +137,9 @@ body {
   height: calc(
     100% + 24px
   ); /* Increase height to account for the hidden borders */
-  clip-path: inset(-12px -12px 5px -12px);
+  clip-path: inset(
+    -12px -12px 5px -12px
+  ); /* Adjust to hide the bottom border */
 }
 
 .image-wrapper img {
