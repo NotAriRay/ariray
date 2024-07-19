@@ -1,20 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500&display=swap");
-@font-face {
-  font-family: nerd;
-  src: url(/assets/SymbolsNerdFont-Regular.ttf);
-}
 
 body {
   font-family: "DM Mono";
   letter-spacing: -0.05ch;
   background-color: #1a1b26;
   color: #a9b1d6;
-}
-
-i {
-  font-family: nerd;
-  font: normal 50px nerd;
-  margin: 20px;
 }
 
 .wave {
@@ -125,45 +115,4 @@ i {
 .stats::before {
   content: "stats";
   color: #7aa2f7;
-}
-
-.python {
-  transition: color 0.2s ease-out;
-}
-.python:hover {
-  color: #ffdd54;
-}
-
-.lua {
-  transition: color 0.2s ease-out;
-}
-.lua:hover {
-  color: #2c2e73;
-}
-
-.cpp {
-  transition: color 0.2s ease-out;
-}
-.cpp:hover {
-  color: #005a9c;
-}
-
-.swift {
-  transition: color 0.2s ease-out;
-}
-.swift:hover {
-  color: #f54a2b;
-}
-.html {
-  transition: color 0.2s ease-out;
-}
-.html:hover {
-  color: #e24f26;
-}
-
-.css {
-  transition: color 0.2s ease-out;
-}
-.css:hover {
-  color: #1372b6;
 }
