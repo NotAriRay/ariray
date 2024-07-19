@@ -1,5 +1,10 @@
-.body {
-  font-family: "Roboto Mono", monospace;
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500&display=swap");
+
+body {
+  font-family: "DM Mono";
+  letter-spacing: -0.05ch;
+  background-color: #1a1b26;
+  color: #a9b1d6;
 }
 
 .wave {
@@ -35,4 +40,79 @@
   100% {
     transform: rotate(0deg);
   }
+}
+
+.border-container {
+  position: relative;
+  padding: 15px;
+  border: 2px solid #414868; /* Purple border color */
+  margin: 20px;
+  width: 300px; /* Adjust width as needed */
+  text-align: center; /* Center the text inside the box */
+  transition: border-color 0.2s ease-out;
+}
+
+.border-container::before {
+  content: "intro";
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background-color: #1a1b26; /* Background color of the box */
+  padding: 0 8px;
+  font-size: 16px; /* Adjust font size */
+  color: #bb9af7; /* Text color */
+}
+
+.border-container:hover {
+  border: 2px solid #bb9af7 !important; /* Purple border color */
+  transition: border-color 0.2s ease-in;
+}
+
+.languages:hover {
+  border-color: #f7768e !important;
+}
+
+.languages::before {
+  content: "languages";
+  color: #f7768e;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.image-wrapper {
+  position: relative;
+  top: -12px; /* Adjust to hide the top border */
+  left: -12px; /* Adjust to hide the left border */
+  width: calc(
+    100% + 24px
+  ); /* Increase width to account for the hidden borders */
+  height: calc(
+    100% + 24px
+  ); /* Increase height to account for the hidden borders */
+  clip-path: inset(-12px -12px 5px -12px);
+}
+
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.stats {
+  width: 500px;
+  margin: 20px;
+}
+
+.stats:hover {
+  border-color: #7aa2f7 !important;
+}
+
+.stats::before {
+  content: "stats";
+  color: #7aa2f7;
 }
