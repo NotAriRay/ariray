@@ -226,3 +226,23 @@ ul li {
   color: #f7768e;
   transition: color 0.2s ease-in;
 }
+
+.projects:hover {
+  border-color: #38bdae !important;
+}
+
+.projects::before {
+  content: "projects";
+  color: #414868;
+  transition: color 0.2s ease-out;
+}
+
+.projects:hover::before {
+  color: #38bdae !important;
+  transition: color 0.2s ease-in;
+}
+
+.phoenix {
+  aspect-ratio: 4 / 1;
+  width: 298px !important;
+}
