@@ -211,3 +211,18 @@ ul li {
   color: #cfc9c2;
   transition: color 0.2s ease-in;
 }
+
+.contact:hover {
+  border-color: #f7768e !important;
+}
+
+.contact::before {
+  content: "contact";
+  color: #414868;
+  transition: color 0.2s ease-out;
+}
+
+.contact:hover::before {
+  color: #f7768e;
+  transition: color 0.2s ease-in;
+}
