@@ -246,3 +246,8 @@ ul li {
   aspect-ratio: 4 / 1;
   width: 298px !important;
 }
+
+.footer {
+  font-size: 0.8em;
+  color: #565c64;
+}
