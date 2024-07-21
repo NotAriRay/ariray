@@ -107,7 +107,7 @@ body {
   transition: color 0.2s ease-in;
 }
 .ghstats {
-  width: 105%;
+  width: 100%;
   overflow: hidden;
 }
 .hobbies {
