@@ -373,23 +373,17 @@ a:hover {
   color: #7aa2f7;
 }
 
-/* Add this for tap effect on mobile */
-@media (hover: none) and (pointer: coarse) {
-  .border-container::before,
-  .container::before {
-    color: #a9b1d6;
-    transition: color 0.2s ease-in;
-  }
+.container:hover {
+  border-color: #bb9af7 !important;
+  transition: color 0.2s ease-out;
+}
 
-  .border-container:active::before,
-  .container:active::before {
-    color: #bb9af7;
-  }
-
-  .border-container .link:active,
-  .container .link:active {
-    text-decoration: underline;
-  }
+.container::before {
+  transition: color 0.2s ease-in;
+}
+.container:hover .border-container .link:active,
+.container .link:active {
+  text-decoration: underline;
 }
 
 /* Ensure containers are responsive */
