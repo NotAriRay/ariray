@@ -107,8 +107,9 @@ body {
   transition: color 0.2s ease-in;
 }
 .ghstats {
-  width: 100%;
+  width: 103%;
   overflow: hidden;
+  padding-top: 20%;
 }
 .hobbies {
   grid-column: 3 / span 2;
@@ -284,6 +285,40 @@ a:hover {
   color: #38bdae;
 }
 
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #191b26;
+  color: #a9b1d6;
+  transition: border-color 0.2s ease-out;
+  cursor: pointer;
+  border: 2px solid#414868;
+}
+
+.back-button::before {
+  content: "btn";
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background-color: #1a1b26;
+  padding: 0 8px;
+  font-size: 16px;
+  color: #414868;
+  transition: color 0.2s ease-out;
+}
+
+.back-button:hover {
+  border-color: #7aa2f7 !important;
+}
+
+.back-button:hover::before {
+  color: #7aa2f7;
+  transition: color 0.2s ease-in;
+}
+
 /* Responsive Styles */
 @media (max-width: 600px) {
   .grid {
@@ -293,5 +328,82 @@ a:hover {
 
   .border-container {
     margin: 10px;
+  }
+}
+
+.logo {
+  width: 50%;
+  height: 50%;
+}
+/* Style for back button to be responsive */
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #191b26;
+  color: #a9b1d6;
+  transition: border-color 0.2s ease-out, background-color 0.2s ease-out;
+  cursor: pointer;
+  border: 2px solid #414868;
+  border-radius: 5px; /* Added to make it more compact */
+}
+
+.back-button::before {
+  content: "btn";
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background-color: #1a1b26;
+  padding: 0 8px;
+  font-size: 16px;
+  color: #414868;
+  transition: color 0.2s ease-out;
+}
+
+.back-button:hover,
+.back-button:active {
+  border-color: #7aa2f7;
+  background-color: #1a1b26; /* Ensuring the background remains consistent */
+}
+
+.back-button:hover::before,
+.back-button:active::before {
+  color: #7aa2f7;
+}
+
+/* Add this for tap effect on mobile */
+@media (hover: none) and (pointer: coarse) {
+  .border-container::before,
+  .container::before {
+    color: #a9b1d6;
+    transition: color 0.2s ease-in;
+  }
+
+  .border-container:active::before,
+  .container:active::before {
+    color: #bb9af7;
+  }
+
+  .border-container .link:active,
+  .container .link:active {
+    text-decoration: underline;
+  }
+}
+
+/* Ensure containers are responsive */
+@media (max-width: 768px) {
+  .container,
+  .border-container {
+    padding: 10px;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  .grid > div {
+    margin-bottom: 20px;
   }
 }
