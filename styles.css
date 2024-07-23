@@ -265,8 +265,14 @@ ul li {
 
 .footer {
   font-size: 0.8em;
-  color: #565c64;
+  color: #414868;
   text-align: center;
+  transition: color 0.2s ease-in;
+}
+
+.footer:hover {
+  color: #a9b1d6;
+  transition: color 0.2s ease-out;
 }
 
 a {
@@ -375,11 +381,12 @@ a:hover {
 
 .container:hover {
   border-color: #bb9af7 !important;
-  transition: color 0.2s ease-out;
+  transition: color 0.2s ease-in;
 }
 
 .container::before {
-  transition: color 0.2s ease-in;
+  transition: color 0.2s ease-out;
+  content: "home";
 }
 .container:hover .border-container .link:active,
 .container .link:active {
