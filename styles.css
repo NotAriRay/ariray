@@ -408,3 +408,39 @@ a:hover {
     margin-bottom: 20px;
   }
 }
+
+/* Add this CSS to your existing styles.css file */
+
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #191b26;
+  color: #a9b1d6;
+  padding: 10px;
+  font-size: 1em;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.popup:before {
+  content: "btn";
+  transition: color 0.2s ease-out;
+}
+
+.popup:hover {
+  border-color: #7aa2f7;
+}
+
+.popup:hover::before {
+  color: #7aa2f7;
+  transition: color 0.2s ease-in;
+}
+
+.popup.show {
+  display: block;
+  opacity: 1;
+}
