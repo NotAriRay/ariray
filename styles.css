@@ -347,7 +347,7 @@ a:hover {
   transition: border-color 0.2s ease-out, background-color 0.2s ease-out;
   cursor: pointer;
   border: 2px solid #414868;
-  border-radius: 5px; /* Added to make it more compact */
+  border-radius: 0px; /* Added to make it more compact */
 }
 
 .back-button::before {
