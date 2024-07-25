@@ -5,6 +5,7 @@ body {
   letter-spacing: -0.05ch;
   background-color: #1a1b26;
   color: #a9b1d6 !important;
+  user-select: none;
 }
 
 .wave {
